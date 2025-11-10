@@ -66,7 +66,7 @@ export function isDirector(employee: any): employee is string {
   }
 }
 
-function executeWork(employee: string) {
+function executeWork(isDirector(employee: string)) {
   if (employee === "Director") return employee.workDirectorTasks();
 
   if (employee === "Teacher") return employee.workTeacherTasks();
