@@ -54,7 +54,7 @@ function createEmployee(salary: string | number) {
   }
 }
 
-export function isDirector(employee: any): employee is string {
+export function isDirector(employee: string) {
   if (typeof employee === "string") {
     if (employee === "Director") {
       return true;
@@ -66,7 +66,7 @@ export function isDirector(employee: any): employee is string {
   }
 }
 
-function executeWork(isDirector(employee: string)) {
+function executeWork(employee: string) {
   if (employee === "Director") return employee.workDirectorTasks();
 
   if (employee === "Teacher") return employee.workTeacherTasks();
