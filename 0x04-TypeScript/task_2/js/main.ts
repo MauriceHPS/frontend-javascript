@@ -67,9 +67,9 @@ export function isDirector(employee: any): employee is string {
 }
 
 function executeWork(employee: string) {
-  if (employee === "Director") return new Director().workDirectorTasks();
+  if (employee === "Director") return employee.workDirectorTasks();
 
-  if (employee === "Teacher") return new Teacher().workTeacherTasks();
+  if (employee === "Teacher") return employee.workTeacherTasks();
 }
 
 console.log(createEmployee(500));
