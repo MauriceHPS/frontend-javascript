@@ -54,7 +54,17 @@ function createEmployee(salary: string | number) {
   }
 }
 
-function isDirector(employee: string) {}
+function isDirector(employee: any): employee is string {
+  if (typeof employee === "string") {
+    if (employee === "Director") {
+      return true;
+    } else {
+      return false;
+    }
+  } else {
+    return false;
+  }
+}
 
 function executeWork(employee: string) {
   if (employee === "Director") return new Director().workDirectorTasks();
