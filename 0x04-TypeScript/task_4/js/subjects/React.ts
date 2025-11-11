@@ -16,11 +16,11 @@ export namespace Subjects {
     getAvailableTeacher(): string {
       const teacher = this.teacher;
       if (
-        teacher &&
-        teacher.experienceTeachingReact &&
-        teacher.experienceTeachingReact > 0
+        this.teacher &&
+        this.teacher.experienceTeachingReact &&
+        this.teacher.experienceTeachingReact > 0
       ) {
-        return `Available Teacher: ${teacher.firstName}`;
+        return `Available Teacher: ${this.teacher.firstName}`;
       }
       return "No available teacher";
     }
