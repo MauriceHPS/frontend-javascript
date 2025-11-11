@@ -18,7 +18,7 @@ export namespace Subjects {
         teacher.experienceTeachingC &&
         teacher.experienceTeachingC > 0
       ) {
-        return `Available Teacher: ${teacher.firstName}`;
+        return `Available Teacher: ${this.teacher.firstName}`;
       }
       return "No available teacher";
     }
