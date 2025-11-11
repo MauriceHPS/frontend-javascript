@@ -25,4 +25,5 @@ export namespace Subjects {
       return "No available teacher";
     }
   }
+  export const react = new React();
 }
